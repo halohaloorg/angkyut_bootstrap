@@ -1,1 +1,6 @@
-console.log('\'Allo \'Allo!');
+
+;(function($) {
+
+
+  $("#PICK_UP .thumbnail").autoHeight();
+})(jQuery);
