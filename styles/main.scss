@@ -107,3 +107,12 @@ body {
     height: auto;
   }
 }
+
+#PICK_UP {
+  .thumbnail {
+    border: 0;
+    > figure {
+      text-align: center;
+    }
+  }
+}
