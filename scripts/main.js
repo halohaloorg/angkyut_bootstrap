@@ -1,6 +1,4 @@
 
-;(function($) {
-
-
-  $("#PICK_UP .thumbnail").autoHeight();
+(function($) {
+  $("#PICK_UP .thumbnail").flatHeights();
 })(jQuery);
