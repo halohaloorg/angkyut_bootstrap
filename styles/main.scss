@@ -4,6 +4,20 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -113,6 +127,15 @@ body {
     border: 0;
     > figure {
       text-align: center;
+    }
+  }
+}
+
+#CATEGORIES {
+  ul {
+    li {
+      width: 260px;
+      float: left;
     }
   }
 }
