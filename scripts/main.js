@@ -1,4 +1,4 @@
 
 (function($) {
-  $("#PICK_UP .thumbnail").flatHeights();
+  $("#PICK_UP > div").flatHeights();
 })(jQuery);
