@@ -1,0 +1,10 @@
+{
+  "name": "angkyut",
+  "version": "0.0.0",
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "jquery": "~2.1.1",
+    "bootstrap-sass-official": "~3.3.1",
+    "camera.slideshow": "~1.4.0"
+  }
+}
