@@ -1,0 +1,27 @@
+include ../_mixins/_mixins
+
+block var_block
+  
+doctype
+html(lang='ja')
+  
+  head
+    include ../_include/_meta
+    block title_block
+      title AngKyut
+  
+  body
+    div.container
+      block header_block
+        +header
+        
+      block navigation_block
+        //-
+          +navbar
+      
+      main#CONTENTS
+        block content_block
+      
+      block footer_block
+        +footer
+        include ../_include/_script

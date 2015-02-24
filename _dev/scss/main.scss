@@ -1,0 +1,105 @@
+$icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+// endbower
+
+@import "http://angkyut.com/javascripts/camera/css/camera.css";
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+header {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+main {
+  margin-bottom: 20px;
+}
+#PICKUP {
+  margin: 30px 0 0;
+}
+
+footer {
+    padding: 20px 15px;
+    color: #FFF;
+    background-color: #000;
+    border-radius: 4px;
+    h4 {
+      margin-left: 10px;
+    }
+    ul{
+      li {
+        list-style-type: square;
+      }
+    }
+    a:link, a:visited, a:hover {
+      color: #FFF;
+
+    }
+    .copyright {
+      padding: 10px;
+    }
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img{
+  width: 100%;
+}
+
+.navbar-nav {
+  float:none;
+  > li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    a {
+      white-space: nowrap;
+    }
+  }
+
+}
+.image {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#PICK_UP {
+  .thumbnail {
+    border: 0;
+    > figure {
+      text-align: center;
+    }
+  }
+}
+
+#CATEGORIES {
+  ul {
+    li {
+      width: 260px;
+      float: left;
+    }
+  }
+}

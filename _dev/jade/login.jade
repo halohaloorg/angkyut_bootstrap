@@ -1,0 +1,29 @@
+extend _template/_angkyut
+
+block content_block
+  .row
+    .col-md-6
+      h1 会員の方
+      p 会員の方はこちらからログインしてください
+      form
+        .form-group
+          label(for='loginID')
+            ログインID :
+          input(type='text', class='form-control', id='loginID', placeholder='ログインID')
+        .form-group
+          label(for='password')
+            パスワード :
+          input(type='password', class='form-control', id='password', placeholder='パスワード')
+        button.btn.btn-default(type='submit') ログイン
+        
+      p
+        a(href="#") パスワードを忘れた方はこちら
+        
+    .col-md-6
+      h1 まだ会員登録をされていない方
+      p お名前や住所などが登録でき、入力の手間が省けスムーズにお買い物をお楽しみいただけます。
+      p
+        a.btn.btn-default(href='#') 新規会員登録
+      p 会員登録をしないで商品を購入される方は、こちらより購入手続きが行えます。
+      p
+        a.btn.btn-default(href='#') 購入手続きへ

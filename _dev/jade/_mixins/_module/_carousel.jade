@@ -1,0 +1,29 @@
+mixin carousel
+  section#carousel-example-generic.carousel.slide(data-ride='carousel')
+    // Indicators
+    ol.carousel-indicators
+      li.active(data-target='#carousel-example-generic', data-slide-to='0')
+      li(data-target='#carousel-example-generic', data-slide-to='1')
+      li(data-target='#carousel-example-generic', data-slide-to='2')
+      li(data-target='#carousel-example-generic', data-slide-to='3')
+    // Wrapper for slides
+    .carousel-inner(role='listbox')
+      .item.active
+        a(href='#')
+          img(src='images/34.jpg', alt='ISABEL')
+      .item
+        a(href='#')
+          img(src='images/33.jpg', alt='ISABEL')
+      .item
+        a(href='#')
+          img(src='images/32.jpg', alt='RICK SACK POUCH')
+      .item
+        a(href='#')
+          img(src='images/31.jpg', alt='PEN CASE')
+    // Controls
+    a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+      span.sr-only Previous
+    a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+      span.sr-only Next

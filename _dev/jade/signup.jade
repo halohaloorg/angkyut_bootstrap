@@ -1,0 +1,22 @@
+extend _template/_angkyut
+
+block content_block
+  p 会員情報をご送信いただくと、お客さまにメールが届きます。
+  p メールに記載のURLにアクセスしていただき会員登録の手続きが完了となります。
+  form.form-horizontal
+    .form-group
+      label.col-sm-2.control-label お名前
+      .col-sm-5
+        input.form-control(type="text", placeholder="姓")
+      .col-sm-5
+        input.form-control(type="text", placeholder="名")
+    .form-group
+      label.col-sm-2.control-label お名前（フリガナ）
+      .col-sm-5
+        input.form-control(type="text", placeholder="セイ")
+      .col-sm-5
+        input.form-control(type="text", placeholder="メイ")
+    .form-group
+      label.col-sm-2.control-label 郵便番号
+      .col-sm-10
+        input.form-control(type="text", placeholder="")

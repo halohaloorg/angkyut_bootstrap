@@ -1,591 +1,332 @@
-<!doctype html>
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <title>angkyut</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="icon" type="image/vnd.microsoft.icon" href="http://angkyut.com/favicon.ico">
-
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <!-- endbower -->
-        <!-- endbuild -->
-
-        <!-- build:css({.tmp,app}) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body>
-      <div class="container">
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-          <div class="header">
-            <ul class="nav nav-pills pull-right">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">AngKyutについて</a></li>
-              <li><a href="#">ご利用ガイド</a></li>
-              <li><a href="#">会員登録</a></li>
-            </ul>
-            <h3 class="text-muted"><a href="#"><img src="images/logo_angkyut.svg" width="150"/></a></h3>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+    <!-- build:css styles/vendor.css-->
+    <!-- bower:css-->
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:css({.tmp,app}) /css/main.css-->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- endbuild-->
+    <!-- build:js scripts/vendor/modernizr.js-->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild-->
+    <title>AngKyut</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="nav nav-pills pull-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">AngKyutについて</a></li>
+          <li><a href="#">ご利用ガイド</a></li>
+          <li><a href="#">製品ラインナップ</a></li>
+          <li><a href="#">会員登録</a></li>
+        </ul>
+        <h3 class="text-muted"><a href="#"><img src="images/logo_angkyut.svg" width="150"/></a></h3>
+      </header>
+      <main id="CONTENTS">
+        <section id="carousel-example-generic" data-ride="carousel" class="carousel slide">
+          <!-- Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+          <!-- Wrapper for slides-->
+          <div role="listbox" class="carousel-inner">
+            <div class="item active"><a href="#"><img src="images/34.jpg" alt="ISABEL"/></a></div>
+            <div class="item"><a href="#"><img src="images/33.jpg" alt="ISABEL"/></a></div>
+            <div class="item"><a href="#"><img src="images/32.jpg" alt="RICK SACK POUCH"/></a></div>
+            <div class="item"><a href="#"><img src="images/31.jpg" alt="PEN CASE"/></a></div>
           </div>
-
-        <nav class="navbar navbar-inverse navbar-default" role="navigation">
-          <div class="">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="#">バッグ</a></li>
-                <li><a href="#">小物雑貨</a></li>
-                <li><a href="#">その他</a></li>
-                <li><a href="#">セール</a></li>
-                <li><a href="#">商品一覧</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-        <div class="row">
-          <div class="col-md-12">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-              </ol>
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <a href="#"><img src="images/34.jpg" alt="ISABEL"></a>
-                </div>
-                <div class="item">
-                  <a href="#"><img src="images/33.jpg" alt="ISABEL"></a>
-                </div>
-                <div class="item">
-                  <a href="#"><img src="images/32.jpg" alt="RICK SACK POUCH"></a>
-                </div>
-                <div class="item">
-                  <a href="#"><img src="images/31.jpg" alt="PEN CASE"></a>
-                </div>
-              </div>
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <section id="PICKUP">
-        <h4>■ PICK UP 注目のアイテム</h4>
-        <div id="PICK_UP" class="row">
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/73/230x150.png?crop=1?1422967578" /></figure>
-              <h5>オリガミポーチ M　シルバー系レッド</h5>
-              <p>コスメをちょこっといれて持ち運ぶのにベストサイズのポーチ。 メイク道具一...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/1216/230x150.png?crop=1?1422967578" /></figure>
-              <h5>ISABEL2 -SquareClutchBag-</h5>
-              <p>イザベル2　〜スクウェア・クラッチバッグ〜 シンプルなホワイトライン...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/524/230x150.jpg?crop=1?1422967578" /></figure>
-              <h5>バッグインバッグ F</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/1197/230x150.jpg?crop=1?1422967578" /></figure>
-              <h5>Sackyutクラッチ(A4対応) G</h5>
-              <p>とってもキュートな外見からは想像できないほど丈夫なクラッチバッグが届きまし...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/73/230x150.png?crop=1?1422967578" /></figure>
-              <h5>オリガミポーチ M　シルバー系レッド</h5>
-              <p>コスメをちょこっといれて持ち運ぶのにベストサイズのポーチ。 メイク道具一...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/1216/230x150.png?crop=1?1422967578" /></figure>
-              <h5>ISABEL2 -SquareClutchBag-</h5>
-              <p>イザベル2　〜スクウェア・クラッチバッグ〜 シンプルなホワイトライン...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/1156/230x150.jpg?crop=1?1422967578" width="230" height="150"/></figure>
-              <h5>ラップトップバッグ S</h5>
-              <p>かわいく見えて機能性重視のパソコンバッグ♪ 耐水性バツグン!!丈夫で長持...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1422967578" /></figure>
-              <h5>バッグインバッグ C</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/509/230x150.jpg?crop=1?1422968705" /></figure>
-              <h5>バッグインバッグ A</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/1197/230x150.jpg?crop=1?1422967578" /></figure>
-              <h5>Sackyutクラッチ(A4対応) G</h5>
-              <p>とってもキュートな外見からは想像できないほど丈夫なクラッチバッグが届きまし...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/540/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>Sackyut クラッチ＆ショルダー　B</h5>
-              <p>しっかり頑丈なサック素材を再活用して、今度は使いやすいバッグを作ったよ！ ...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/535/230x150.jpg?crop=1?1422967578" /></figure>
-              <h5>ライスサッククラッチ A4 D</h5>
-              <p>フィリピンで売られているジャスミン米などの ちょっと高級な香り米の袋はと...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/493/230x150.jpg?crop=1?1423532240" /></figure>
-              <h5>パーティクラッチ2way Color A</h5>
-              <p>ケータイやコスメ、手帳にペン、必要最低限の小物をいれて ふらりとお出かけ...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ C</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/509/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ A</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/535/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>ライスサッククラッチ A4 D</h5>
-              <p>フィリピンで売られているジャスミン米などの ちょっと高級な香り米の袋はと...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/540/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>Sackyut クラッチ＆ショルダー　B</h5>
-              <p>しっかり頑丈なサック素材を再活用して、今度は使いやすいバッグを作ったよ！ ...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ C</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/509/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ A</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/535/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>ライスサッククラッチ A4 D</h5>
-              <p>フィリピンで売られているジャスミン米などの ちょっと高級な香り米の袋はと...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/540/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>Sackyut クラッチ＆ショルダー　B</h5>
-              <p>しっかり頑丈なサック素材を再活用して、今度は使いやすいバッグを作ったよ！ ...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ C</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/509/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ A</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/535/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>ライスサッククラッチ A4 D</h5>
-              <p>フィリピンで売られているジャスミン米などの ちょっと高級な香り米の袋はと...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/540/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>Sackyut クラッチ＆ショルダー　B</h5>
-              <p>しっかり頑丈なサック素材を再活用して、今度は使いやすいバッグを作ったよ！ ...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ C</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/509/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ A</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/535/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>ライスサッククラッチ A4 D</h5>
-              <p>フィリピンで売られているジャスミン米などの ちょっと高級な香り米の袋はと...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/540/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>Sackyut クラッチ＆ショルダー　B</h5>
-              <p>しっかり頑丈なサック素材を再活用して、今度は使いやすいバッグを作ったよ！ ...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ C</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/509/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ A</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/535/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>ライスサッククラッチ A4 D</h5>
-              <p>フィリピンで売られているジャスミン米などの ちょっと高級な香り米の袋はと...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/540/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>Sackyut クラッチ＆ショルダー　B</h5>
-              <p>しっかり頑丈なサック素材を再活用して、今度は使いやすいバッグを作ったよ！ ...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ C</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/509/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ A</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/535/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>ライスサッククラッチ A4 D</h5>
-              <p>フィリピンで売られているジャスミン米などの ちょっと高級な香り米の袋はと...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/540/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>Sackyut クラッチ＆ショルダー　B</h5>
-              <p>しっかり頑丈なサック素材を再活用して、今度は使いやすいバッグを作ったよ！ ...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ C</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/509/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ A</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/535/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>ライスサッククラッチ A4 D</h5>
-              <p>フィリピンで売られているジャスミン米などの ちょっと高級な香り米の袋はと...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/540/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>Sackyut クラッチ＆ショルダー　B</h5>
-              <p>しっかり頑丈なサック素材を再活用して、今度は使いやすいバッグを作ったよ！ ...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ C</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/509/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ A</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/535/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>ライスサッククラッチ A4 D</h5>
-              <p>フィリピンで売られているジャスミン米などの ちょっと高級な香り米の袋はと...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/540/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>Sackyut クラッチ＆ショルダー　B</h5>
-              <p>しっかり頑丈なサック素材を再活用して、今度は使いやすいバッグを作ったよ！ ...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ C</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/509/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ A</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/535/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>ライスサッククラッチ A4 D</h5>
-              <p>フィリピンで売られているジャスミン米などの ちょっと高級な香り米の袋はと...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/540/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>Sackyut クラッチ＆ショルダー　B</h5>
-              <p>しっかり頑丈なサック素材を再活用して、今度は使いやすいバッグを作ったよ！ ...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ C</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/509/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ A</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/535/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>ライスサッククラッチ A4 D</h5>
-              <p>フィリピンで売られているジャスミン米などの ちょっと高級な香り米の袋はと...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/540/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>Sackyut クラッチ＆ショルダー　B</h5>
-              <p>しっかり頑丈なサック素材を再活用して、今度は使いやすいバッグを作ったよ！ ...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ C</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/509/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>バッグインバッグ A</h5>
-              <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/535/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>ライスサッククラッチ A4 D</h5>
-              <p>フィリピンで売られているジャスミン米などの ちょっと高級な香り米の袋はと...</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-              <figure><img src="http://angkyut.com/image/ItemPicture/image/540/230x150.jpg?crop=1?1418051959" /></figure>
-              <h5>Sackyut クラッチ＆ショルダー　B</h5>
-              <p>しっかり頑丈なサック素材を再活用して、今度は使いやすいバッグを作ったよ！ ...</p>
-            </div>
-          </div>
-        </div>
+          <!-- Controls--><a href="#carousel-example-generic" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a href="#carousel-example-generic" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
         </section>
-        <footer>
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <h4><a href="#">AngKyutについて</a></h4>
-              <ul>
-                <li><a href="#">作りたちの物語</a></li>
-                <li><a href="#">社会への貢献について</a></li>
-                <li><a href="#">特定非営利活動法人ハロハロ</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <h4><a href="#">製品ラインナップ</a></h4>
-              <ul>
-                <li><a href="#">Trashion by.FrancisSollano</a></li>
-                <li><a href="#">クラッチ</a></li>
-                <li><a href="#">オリガミ</a></li>
-                <li><a href="#">サッキュート</a></li>
-                <li><a href="#">ランチバッグ</a></li>
-                <li><a href="#">クーラーバッグ(保冷温)</a></li>
-                <li><a href="#">バッグインバッグ</a></li>
-                <li><a href="#">ポーチ</a></li>
-                <li><a href="#">ペンケース</a></li>
-                <li><a href="#">PCケース(ノート)</a></li>
-                <li><a href="#">PCバッグ</a></li>
-                <li><a href="#">ブックカバー</a></li>
-                <li><a href="#">パスポートケース</a></li>
-                <li><a href="#">コインケース</a></li>
-                <li><a href="#">カードケース</a></li>
-                <li><a href="#">キーカバー</a></li>
-                <li><a href="#">ポケットティッシュケース</a></li>
-                <li><a href="#">フェアトレードボーイ</a></li>
-                <li><a href="#">SALE　-セール-</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <h4><a href="#">会員登録</a></h4>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <ul>
-                <li><a href="#">ご利用ガイド</a></li>
-                <li><a href="#">ご利用規約</a></li>
-                <li><a href="#">プライバシーポリシー</a></li>
-                <li><a href="#">特定商取引法に基づく表示</a></li>
-              </ul>
-            </div>
+        <section id="PICKUP">
+          <h4>■ PICK UP 注目のアイテム</h4>
+          <div id="PICK_UP" class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/631/230x150.jpg?crop=1?1424754534" width="230" height="150"></figure>
+                  <h5>ラップトップバッグ S</h5>
+                  <p>コスメをちょこっといれて持ち運ぶのにベストサイズのポーチ。 メイク道具一...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/752/230x150.jpg?crop=1?1424754534" width="230" height="150"></figure>
+                  <h5>バッグインバッグ C</h5>
+                  <p>イザベル2　〜スクウェア・クラッチバッグ〜 シンプルなホワイトライン...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/524/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>バッグインバッグ F</h5>
+                  <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/1197/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>Sackyutクラッチ(A4対応) G</h5>
+                  <p>とってもキュートな外見からは想像できないほど丈夫なクラッチバッグが届きまし...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/73/230x150.png?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>オリガミポーチ M　シルバー系レッド</h5>
+                  <p>コスメをちょこっといれて持ち運ぶのにベストサイズのポーチ。 メイク道具一...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/1216/230x150.png?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>ISABEL2 -SquareClutchBag-</h5>
+                  <p>イザベル2　〜スクウェア・クラッチバッグ〜 シンプルなホワイトライン...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/1156/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>ラップトップバッグ S</h5>
+                  <p>かわいく見えて機能性重視のパソコンバッグ♪ 耐水性バツグン!!丈夫で長持...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>バッグインバッグ C</h5>
+                  <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/631/230x150.jpg?crop=1?1424754534" width="230" height="150"></figure>
+                  <h5>ラップトップバッグ S</h5>
+                  <p>コスメをちょこっといれて持ち運ぶのにベストサイズのポーチ。 メイク道具一...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/752/230x150.jpg?crop=1?1424754534" width="230" height="150"></figure>
+                  <h5>バッグインバッグ C</h5>
+                  <p>イザベル2　〜スクウェア・クラッチバッグ〜 シンプルなホワイトライン...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/524/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>バッグインバッグ F</h5>
+                  <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/1197/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>Sackyutクラッチ(A4対応) G</h5>
+                  <p>とってもキュートな外見からは想像できないほど丈夫なクラッチバッグが届きまし...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/73/230x150.png?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>オリガミポーチ M　シルバー系レッド</h5>
+                  <p>コスメをちょこっといれて持ち運ぶのにベストサイズのポーチ。 メイク道具一...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/1216/230x150.png?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>ISABEL2 -SquareClutchBag-</h5>
+                  <p>イザベル2　〜スクウェア・クラッチバッグ〜 シンプルなホワイトライン...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/1156/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>ラップトップバッグ S</h5>
+                  <p>かわいく見えて機能性重視のパソコンバッグ♪ 耐水性バツグン!!丈夫で長持...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>バッグインバッグ C</h5>
+                  <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/631/230x150.jpg?crop=1?1424754534" width="230" height="150"></figure>
+                  <h5>ラップトップバッグ S</h5>
+                  <p>コスメをちょこっといれて持ち運ぶのにベストサイズのポーチ。 メイク道具一...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/752/230x150.jpg?crop=1?1424754534" width="230" height="150"></figure>
+                  <h5>バッグインバッグ C</h5>
+                  <p>イザベル2　〜スクウェア・クラッチバッグ〜 シンプルなホワイトライン...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/524/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>バッグインバッグ F</h5>
+                  <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/1197/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>Sackyutクラッチ(A4対応) G</h5>
+                  <p>とってもキュートな外見からは想像できないほど丈夫なクラッチバッグが届きまし...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/73/230x150.png?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>オリガミポーチ M　シルバー系レッド</h5>
+                  <p>コスメをちょこっといれて持ち運ぶのにベストサイズのポーチ。 メイク道具一...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/1216/230x150.png?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>ISABEL2 -SquareClutchBag-</h5>
+                  <p>イザベル2　〜スクウェア・クラッチバッグ〜 シンプルなホワイトライン...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/1156/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>ラップトップバッグ S</h5>
+                  <p>かわいく見えて機能性重視のパソコンバッグ♪ 耐水性バツグン!!丈夫で長持...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>バッグインバッグ C</h5>
+                  <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/631/230x150.jpg?crop=1?1424754534" width="230" height="150"></figure>
+                  <h5>ラップトップバッグ S</h5>
+                  <p>コスメをちょこっといれて持ち運ぶのにベストサイズのポーチ。 メイク道具一...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/752/230x150.jpg?crop=1?1424754534" width="230" height="150"></figure>
+                  <h5>バッグインバッグ C</h5>
+                  <p>イザベル2　〜スクウェア・クラッチバッグ〜 シンプルなホワイトライン...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/524/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>バッグインバッグ F</h5>
+                  <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/1197/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>Sackyutクラッチ(A4対応) G</h5>
+                  <p>とってもキュートな外見からは想像できないほど丈夫なクラッチバッグが届きまし...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/73/230x150.png?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>オリガミポーチ M　シルバー系レッド</h5>
+                  <p>コスメをちょこっといれて持ち運ぶのにベストサイズのポーチ。 メイク道具一...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/1216/230x150.png?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>ISABEL2 -SquareClutchBag-</h5>
+                  <p>イザベル2　〜スクウェア・クラッチバッグ〜 シンプルなホワイトライン...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/1156/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>ラップトップバッグ S</h5>
+                  <p>かわいく見えて機能性重視のパソコンバッグ♪ 耐水性バツグン!!丈夫で長持...</p>
+                </div></a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="article.html">
+                <div class="thumbnail">
+                  <figure><img src="http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1422967578" width="230" height="150"></figure>
+                  <h5>バッグインバッグ C</h5>
+                  <p>大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が...</p>
+                </div></a></div>
           </div>
-          <p class="copyright"><small>Copyright 特定非営利活動法人ハロハロ. All Rights Reserved.</small></p>
-        </footer>
-
-
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
-
-        <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/jquery.flatheights.js"></script>
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-</body>
+        </section>
+      </main>
+      <footer>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <h4><a href="#">AngKyutについて</a></h4>
+            <ul>
+              <li><a href="#">作りたちの物語</a></li>
+              <li><a href="#">社会への貢献について</a></li>
+              <li><a href="http://www.npohalohalo.org/" target="_blank">特定非営利活動法人ハロハロ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <h4><a href="#">製品ラインナップ</a></h4>
+            <ul>
+              <li><a href="#">Trashion by.FrancisSollano</a></li>
+              <li><a href="#">クラッチ</a></li>
+              <li><a href="#">オリガミ</a></li>
+              <li><a href="#">サッキュート</a></li>
+              <li><a href="#">ランチバッグ</a></li>
+              <li><a href="#">クーラーバッグ(保冷温)</a></li>
+              <li><a href="#">バッグインバッグ</a></li>
+              <li><a href="#">ポーチ</a></li>
+              <li><a href="#">ペンケース</a></li>
+              <li><a href="#">PCケース(ノート)</a></li>
+              <li><a href="#">PCバッグ</a></li>
+              <li><a href="#">ブックカバー</a></li>
+              <li><a href="#">パスポートケース</a></li>
+              <li><a href="#">コインケース</a></li>
+              <li><a href="#">カードケース</a></li>
+              <li><a href="#">キーカバー</a></li>
+              <li><a href="#">ポケットティッシュケース</a></li>
+              <li><a href="#">フェアトレードボーイ</a></li>
+              <li><a href="#">SALE　-セール-</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <h4><a href="#">会員登録</a></h4>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <ul>
+              <li><a href="#">ご利用ガイド</a></li>
+              <li><a href="#">ご利用規約</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+              <li><a href="#">特定商取引法に基づく表示</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright"><small>Copyright 特定非営利活動法人ハロハロ. All Rights Reserved.</small></p>
+      </footer>
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-60010528-1', 'auto');
+        ga('send', 'pageview');
+        
+      </script>
+      <!-- build:js scripts/vendor.js-->
+      <!-- bower:js-->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <!-- endbower-->
+      <!-- endbuild-->
+      <!-- build:js scripts/plugins.js-->
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+      <!-- endbuild-->
+      <!-- build:js scripts/main.js-->
+      <script src="scripts/jquery.flatheights.js"></script>
+      <script src="scripts/main.js"></script>
+      <!-- endbuild-->
+    </div>
+  </body>
 </html>

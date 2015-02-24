@@ -1,0 +1,56 @@
+extend _template/_angkyut
+
+block content_block
+  table.table
+    thead
+      tr
+        th 商品画像
+        th 商品名
+        th 単価(税込み)
+        th 個数
+        th 計
+        th 削除
+    tbody
+      tr
+        th
+          img(src='http://angkyut.com/sq_image/ItemPicture/image/2/120.png?1424695540', width='120', height='120', alt='【Fairtradeboy掲載品】ライスサッククラッチ　茶系')
+        td
+          |【Fairtradeboy掲載品】ライスサッククラッチ　茶系
+        td
+          | 1,800円（税込）
+        td
+          | 1個
+        td
+          | 1,800円
+        td
+          a(href='/cart/delete/kQhs5yRKV8bn', onclick='return confirm("カートから削除してよろしいですか？");') 削除する
+      tr
+        th
+          img(src='http://angkyut.com/sq_image/ItemPicture/image/488/120.jpg?1424754799', width='120', height='120', alt='ランチトート　H')
+        td
+          |ランチトート　H
+        td
+          | 1,800円（税込）
+        td
+          | 1個
+        td
+          | 1,800円
+        td
+          a(href='/cart/delete/kQhs5yRKV8bn', onclick='return confirm("カートから削除してよろしいですか？");') 削除する
+      tr
+        td(colspan='4')
+          | 合計（送料は確認画面で反映されます）
+        td(colspan='2')
+          | 3,800円（税込）
+          
+  nav
+    ul.pager
+      li.previous
+        a(href='#') 
+          span(aria-hidden='true') &larr;
+          ショッピングを続ける
+      li.next
+        a(href='#') 
+          ご購入手続きに進む
+          span(aria-hidden='true') &rarr;
+  
