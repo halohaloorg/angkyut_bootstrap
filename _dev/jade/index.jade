@@ -1,17 +1,37 @@
 extend _template/_angkyut
 
 block content_block
-  +carousel
   
-  section#PICKUP
-    h4 ■ PICK UP 注目のアイテム
-    #PICK_UP.row
-      for j in [1, 2, 3, 4]
-        for goods, i in [{"image": "http://angkyut.com/image/ItemPicture/image/631/230x150.jpg?crop=1?1424754534","title": "ラップトップバッグ S","article": "コスメをちょこっといれて持ち運ぶのにベストサイズのポーチ。 メイク道具一..."},{"image": "http://angkyut.com/image/ItemPicture/image/752/230x150.jpg?crop=1?1424754534","title": "バッグインバッグ C","article": "イザベル2　〜スクウェア・クラッチバッグ〜 シンプルなホワイトライン..."},{"image": "http://angkyut.com/image/ItemPicture/image/524/230x150.jpg?crop=1?1422967578","title": "バッグインバッグ F","article": "大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が..."},{"image": "http://angkyut.com/image/ItemPicture/image/1197/230x150.jpg?crop=1?1422967578","title": "Sackyutクラッチ(A4対応) G","article": "とってもキュートな外見からは想像できないほど丈夫なクラッチバッグが届きまし..."},{"image": "http://angkyut.com/image/ItemPicture/image/73/230x150.png?crop=1?1422967578","title": "オリガミポーチ M　シルバー系レッド","article": "コスメをちょこっといれて持ち運ぶのにベストサイズのポーチ。 メイク道具一..."},{"image": "http://angkyut.com/image/ItemPicture/image/1216/230x150.png?crop=1?1422967578","title": "ISABEL2 -SquareClutchBag-","article": "イザベル2　〜スクウェア・クラッチバッグ〜 シンプルなホワイトライン..."},{"image": "http://angkyut.com/image/ItemPicture/image/1156/230x150.jpg?crop=1?1422967578","title": "ラップトップバッグ S","article": "かわいく見えて機能性重視のパソコンバッグ♪ 耐水性バツグン!!丈夫で長持..."},{"image": "http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1422967578","title": "バッグインバッグ C","article": "大きめのバッグだと筆記用具やパスケース、リップクリームや鍵類など 小物が..."}]
-          .col-lg-3.col-md-4.col-sm-6.col-xs-12
-            a(href='article.html')
-              .thumbnail
-                figure
-                  img(src='#{goods.image}', width="230", height="150")
-                h5 #{goods.title}
-                p #{goods.article}
+    ul
+      li
+        a(href='top.html')トップページ
+      li
+        a(href='article.html')個別ページ
+    hr
+    ul
+      li
+        a(href='about.html') AngKyutについて
+      li
+        a(href='story.html')作りたちの物語
+    hr
+    ul
+      li
+        a(href='guide.html')ご利用ガイド
+      li
+        a(href='agreement.html')ご利用規約
+      li
+        a(href='policy.html')プライバシーポリシー
+      li
+        a(href='commercial.html')特定商取引法に基づく表示
+    hr
+    ul
+      li
+        a(href='cart.html')カート
+      li
+        a(href='login.html')ご利用手続き
+      li
+        a(href='rule.html')新規会員登録
+      li
+        a(href='signup.html')サインアップ
+      li
+        a(href='salvage.html')パスワードを忘れた方
