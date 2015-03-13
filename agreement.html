@@ -11,6 +11,7 @@
     <!-- endbower-->
     <!-- endbuild-->
     <!-- build:css({.tmp,app}) /css/main.css-->
+    <link rel="stylesheet" href="bower_components/drawer/dist/css/drawer.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <!-- endbuild-->
     <!-- build:js scripts/vendor/modernizr.js-->
@@ -19,162 +20,205 @@
     <title>AngKyut</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <ul class="nav nav-pills pull-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">AngKyutについて</a></li>
-          <li><a href="#">ご利用ガイド</a></li>
-          <li><a href="#">製品ラインナップ</a></li>
-          <li><a href="#">会員登録</a></li>
-        </ul>
-        <h3 class="text-muted"><a href="#"><img src="images/logo_angkyut.svg" width="150"/></a></h3>
+    <header id="HEADER">
+      <ul class="nav nav-pills pull-right">
+        <li>
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="InputSearch" class="sr-only">検索</label>
+              <div class="input-group">
+                <input id="InputSearch" type="search" placeholder="検索" class="form-control input-sm"/>
+                <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+              </div>
+            </div>
+          </form>
+        </li>
+        <li><a href="#"> <span class="glyphicon glyphicon-user"></span>&nbsp;苗字名前様 300P</a></li>
+        <li><a href="cart.html"> <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;3点 &yen;5,000</a></li>
+      </ul>
+      <h3 class="text-muted"><a href="#"><img src="images/logo_angkyut_white.svg" height="20"/></a></h3>
+    </header>
+    <div class="drawer drawer-left drawer-responsive">
+      <header id="DRAWER" role="banner">
+        <div class="drawer-header">
+          <button type="button" class="drawer-toggle drawer-hamburger"><span class="sr-only">toggle navigation</span><span class="drawer-hamburger-icon"></span></button>
+        </div>
+        <div class="drawer-main drawer-default">
+          <figure><a href="category.html"><img src="http://g-ec2.images-amazon.com/images/G/09/fashion_14/08_X-FSN/foil650_timesale_0404._V340547663_.png" height="50" width="250"/></a></figure>
+          <figure><a href="article.html"><img src="http://www.ethicalfashionjapan.com/wp/wp-content/uploads/2013/12/fair-trade-boy.jpg" height="50" width="250"/></a></figure>
+          <nav role="navigation" class="drawer-nav">
+            <h1>カテゴリタイトル</h1>
+            <ul class="drawer-menu">
+              <li class="drawer-menu-item"><a href="category.html">カテゴリ名</a></li>
+              <li class="drawer-menu-item"><a href="category.html">カテゴリ名</a></li>
+              <li class="drawer-menu-item"><a href="category.html">カテゴリ名</a></li>
+              <li class="drawer-menu-item"><a href="category.html">カテゴリ名</a></li>
+              <li class="drawer-menu-item"><a href="category.html">カテゴリ名</a></li>
+            </ul>
+            <h1>カテゴリタイトル</h1>
+            <ul class="drawer-menu">
+              <li class="drawer-menu-item"><a href="category.html">カテゴリ名</a></li>
+              <li class="drawer-menu-item"><a href="category.html">カテゴリ名</a></li>
+              <li class="drawer-menu-item"><a href="category.html">カテゴリ名</a></li>
+              <li class="drawer-menu-item"><a href="category.html">カテゴリ名</a></li>
+              <li class="drawer-menu-item"><a href="category.html">カテゴリ名</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <main id="CONTENTS">
-        <div class="row">
-          <div class="col-md-8">
-            <h1>会員規約</h1>
-            <h2>第1条　会員規約</h2>
-            <p>本規約は特定非営利活動法人ハロハロ（以下、「ハロハロ」といいます。）が提供するオンラインショップ（以下、「アンキュートオンラインショップ」といいます。）を、会員が利用するにあたり適用するものです。</p>
-            <h2>第2条 規約の変更</h2>
-            <ol>
-              <li>ハロハロは会員への事前通知、承諾なしに本規約を変更できるものとします。この場合には、アンキュートオンラインショップの利用条件は変更後の規約によるものとします。 </li>
-              <li>変更後の会員規約は、アンキュートオンラインショップのWebサイト等において表示された時点より、効力を生じるものとします。</li>
-            </ol>
-            <h2>第3条　会員および入会</h2>
-            <ol>
-              <li>会員とは、当社所定の手続きに従い本サイト上でメールアドレス及びパスワードの登録手続きの完了した方とします。 </li>
-              <li>会員はアンキュートオンラインショップへの登録手続きを行った時点又は本規約についての通知を受け承認した時点で、本会員規約の内容を承諾しているものとみなします。</li>
-            </ol>
-            <h2>第4条　変更の届け出</h2>
-            <p>会員は、氏名、住所、電話番号、Eメールアドレスその他、ハロハロへ届け出ている内容に変更が生じた場合には、速やかに変更するものとします。</p>
-            <h2>第5条　退会</h2>
-            <ol>
-              <li>会員がアンキュートオンラインショップを退会する場合には、会員のマイページ内にて手続きすることでハロハロへ届け出るものとします。 </li>
-              <li>会員の資格は一身専属のものであり、ハロハロは当該会員の死亡を知った時点をもって、前項の届け出があったものとして取り扱います。</li>
-            </ol>
-            <h2>第6条　会員資格の取消し</h2>
-            <ol>
-              <li>会員が以下の項目のいずれかに該当する場合、ハロハロは当該会員への事前通知、承諾なしに会員資格を取消すことができるものとします。 </li>
-              <ol>
-                <li>ハロハロへの申告、届出内容に虚偽があった場合 </li>
-                <li>会員メールアドレス又はパスワードを不正に使用し、または使用させた場合 </li>
-                <li>販売代金等の支払債務の履行遅延または不履行があった場合 </li>
-                <li>電話、FAX、Eメールその他の手段によっても、会員との連絡が取れなくなった場合 </li>
-                <li>本規約の定めるいずれかに違反した場合 </li>
-                <li>その他、ハロハロが会員として不適切と判断した場合 </li>
-              </ol>
-              <li>ハロハロが前項の措置をとったことで、当該会員がアンキュートオンラインショップを利用できなくなり、これにより当該会員または第三者に損害が発生したとしても、ハロハロは一切の責任を負わないものとします。</li>
-            </ol>
-            <h2>第7条　メールアドレスおよびパスワードの管理責任</h2>
-            <ol>
-              <li>会員は、ハロハロに登録したメールアドレスおよびパスワードの管理と、その使用に関して一切の責任を負うものとします。 </li>
-              <li>会員は、メールアドレスおよびパスワードを第三者へ使用させたり、貸与、譲渡、売買等を行ってはならないものとします。 </li>
-              <li>会員は、メールアドレスおよびパスワードの失念があった場合、ハロハロの所定の手続きに従うものとします。 </li>
-              <li>会員は、メールアドレスおよびパスワードの盗難があった場合、または第三者に使用されていることが判明した場合には、直ちにハロハロへその旨を連絡するとともに、ハロハロからの指示がある場合はこれに従うものとします。</li>
-            </ol>
-            <h2>第8条　免責事項</h2>
-            <ol>
-              <li>ハロハロは、アンキュートオンラインショップの稼動状態を良好に保つために、会員への事前通知、承諾なしにアンキュートオンラインショップを中断、停止して保守点検を行うことができるものとします。 </li>
-              <li>このような事態に伴い、会員に不利益、損害が発生したとしても、ハロハロは一切の責任を負わないものとします </li>
-              <li>ハロハロは、利用者の使用環境、ネットワークの接続状態、操作手順の不備によって生じた損害は保証しないものとします。 </li>
-              <li>アンキュートオンラインショップの掲載内容、掲載商品、商品価格、商品仕様は予告なしに変更されることがありますのであらかじめご了承ください。 </li>
-              <li>ハロハロは、本ウェブサイトにリンクしている、他のウェブサイトの内容については一切責任を負いません。</li>
-            </ol>
-            <h3>付則</h3>
-            <p>この規約は2013年11月1日から実施します。</p>
-          </div>
-          <div class="col-md-4">
-            <ul>
-              <li><a href="#">ご利用ガイド</a></li>
-              <li><a href="#">ご利用規約</a></li>
-              <li><a href="#">プライバシーポリシー</a></li>
-              <li><a href="#">特定商取引法に基づく表示</a></li>
-            </ul>
-          </div>
+      <div class="drawer-overlay">
+        <div class="container">
+          <main id="CONTENTS">
+            <div class="row">
+              <div class="col-md-8">
+                <h1>会員規約</h1>
+                <h2>第1条　会員規約</h2>
+                <p>本規約は特定非営利活動法人ハロハロ（以下、「ハロハロ」といいます。）が提供するオンラインショップ（以下、「アンキュートオンラインショップ」といいます。）を、会員が利用するにあたり適用するものです。</p>
+                <h2>第2条 規約の変更</h2>
+                <ol>
+                  <li>ハロハロは会員への事前通知、承諾なしに本規約を変更できるものとします。この場合には、アンキュートオンラインショップの利用条件は変更後の規約によるものとします。 </li>
+                  <li>変更後の会員規約は、アンキュートオンラインショップのWebサイト等において表示された時点より、効力を生じるものとします。</li>
+                </ol>
+                <h2>第3条　会員および入会</h2>
+                <ol>
+                  <li>会員とは、当社所定の手続きに従い本サイト上でメールアドレス及びパスワードの登録手続きの完了した方とします。 </li>
+                  <li>会員はアンキュートオンラインショップへの登録手続きを行った時点又は本規約についての通知を受け承認した時点で、本会員規約の内容を承諾しているものとみなします。</li>
+                </ol>
+                <h2>第4条　変更の届け出</h2>
+                <p>会員は、氏名、住所、電話番号、Eメールアドレスその他、ハロハロへ届け出ている内容に変更が生じた場合には、速やかに変更するものとします。</p>
+                <h2>第5条　退会</h2>
+                <ol>
+                  <li>会員がアンキュートオンラインショップを退会する場合には、会員のマイページ内にて手続きすることでハロハロへ届け出るものとします。 </li>
+                  <li>会員の資格は一身専属のものであり、ハロハロは当該会員の死亡を知った時点をもって、前項の届け出があったものとして取り扱います。</li>
+                </ol>
+                <h2>第6条　会員資格の取消し</h2>
+                <ol>
+                  <li>会員が以下の項目のいずれかに該当する場合、ハロハロは当該会員への事前通知、承諾なしに会員資格を取消すことができるものとします。 </li>
+                  <ol>
+                    <li>ハロハロへの申告、届出内容に虚偽があった場合 </li>
+                    <li>会員メールアドレス又はパスワードを不正に使用し、または使用させた場合 </li>
+                    <li>販売代金等の支払債務の履行遅延または不履行があった場合 </li>
+                    <li>電話、FAX、Eメールその他の手段によっても、会員との連絡が取れなくなった場合 </li>
+                    <li>本規約の定めるいずれかに違反した場合 </li>
+                    <li>その他、ハロハロが会員として不適切と判断した場合 </li>
+                  </ol>
+                  <li>ハロハロが前項の措置をとったことで、当該会員がアンキュートオンラインショップを利用できなくなり、これにより当該会員または第三者に損害が発生したとしても、ハロハロは一切の責任を負わないものとします。</li>
+                </ol>
+                <h2>第7条　メールアドレスおよびパスワードの管理責任</h2>
+                <ol>
+                  <li>会員は、ハロハロに登録したメールアドレスおよびパスワードの管理と、その使用に関して一切の責任を負うものとします。 </li>
+                  <li>会員は、メールアドレスおよびパスワードを第三者へ使用させたり、貸与、譲渡、売買等を行ってはならないものとします。 </li>
+                  <li>会員は、メールアドレスおよびパスワードの失念があった場合、ハロハロの所定の手続きに従うものとします。 </li>
+                  <li>会員は、メールアドレスおよびパスワードの盗難があった場合、または第三者に使用されていることが判明した場合には、直ちにハロハロへその旨を連絡するとともに、ハロハロからの指示がある場合はこれに従うものとします。</li>
+                </ol>
+                <h2>第8条　免責事項</h2>
+                <ol>
+                  <li>ハロハロは、アンキュートオンラインショップの稼動状態を良好に保つために、会員への事前通知、承諾なしにアンキュートオンラインショップを中断、停止して保守点検を行うことができるものとします。 </li>
+                  <li>このような事態に伴い、会員に不利益、損害が発生したとしても、ハロハロは一切の責任を負わないものとします </li>
+                  <li>ハロハロは、利用者の使用環境、ネットワークの接続状態、操作手順の不備によって生じた損害は保証しないものとします。 </li>
+                  <li>アンキュートオンラインショップの掲載内容、掲載商品、商品価格、商品仕様は予告なしに変更されることがありますのであらかじめご了承ください。 </li>
+                  <li>ハロハロは、本ウェブサイトにリンクしている、他のウェブサイトの内容については一切責任を負いません。</li>
+                </ol>
+                <h3>付則</h3>
+                <p>この規約は2013年11月1日から実施します。</p>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li><a href="guide.html">ご利用ガイド</a></li>
+                  <li><a href="agreement.html">ご利用規約</a></li>
+                  <li><a href="policy.html">プライバシーポリシー</a></li>
+                  <li><a href="commercial.html">特定商取引法に基づく表示</a></li>
+                </ul>
+              </div>
+            </div>
+          </main>
         </div>
-      </main>
-      <footer>
-        <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <h4><a href="#">AngKyutについて</a></h4>
-            <ul>
-              <li><a href="#">作りたちの物語</a></li>
-              <li><a href="#">社会への貢献について</a></li>
-              <li><a href="http://www.npohalohalo.org/" target="_blank">特定非営利活動法人ハロハロ</a></li>
-            </ul>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <ul>
+                  <li><a href="about.html">AngKyutについて</a></li>
+                  <li><a href="story.html">作りたちの物語</a></li>
+                  <li><a href="http://www.npohalohalo.org/" target="_blank">特定非営利活動法人ハロハロ</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <ul>
+                  <li><a href="guide.html">ご利用ガイド</a></li>
+                  <li><a href="agreement.html">ご利用規約</a></li>
+                  <li><a href="policy.html">プライバシーポリシー</a></li>
+                  <li><a href="commercial.html">特定商取引法に基づく表示</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                <h3>お問い合わせ</h3>
+                <form role="form" class="form-horizontal">
+                  <div class="form-group">
+                    <label for="inputName" class="col-lg-3 control-label">名前</label>
+                    <div class="col-lg-9">
+                      <input id="inputName" type="name" placeholder="例）アロマ花子" class="form-control"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail" class="col-lg-3 control-label">メール</label>
+                    <div class="col-lg-9">
+                      <input id="inputEmail" type="email" placeholder="例）example@mail.com" class="form-control"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputDetail" class="col-lg-3 control-label">問い合わせ</label>
+                    <div class="col-lg-9">
+                      <textarea id="inputDetail" rows="3" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-offset-3 col-lg-9">
+                      <button type="submit" class="btn btn-default">送信</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <p class="copyright"><small>Copyright 特定非営利活動法人ハロハロ. All Rights Reserved.</small></p>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <h4><a href="#">製品ラインナップ</a></h4>
-            <ul>
-              <li><a href="#">Trashion by.FrancisSollano</a></li>
-              <li><a href="#">クラッチ</a></li>
-              <li><a href="#">オリガミ</a></li>
-              <li><a href="#">サッキュート</a></li>
-              <li><a href="#">ランチバッグ</a></li>
-              <li><a href="#">クーラーバッグ(保冷温)</a></li>
-              <li><a href="#">バッグインバッグ</a></li>
-              <li><a href="#">ポーチ</a></li>
-              <li><a href="#">ペンケース</a></li>
-              <li><a href="#">PCケース(ノート)</a></li>
-              <li><a href="#">PCバッグ</a></li>
-              <li><a href="#">ブックカバー</a></li>
-              <li><a href="#">パスポートケース</a></li>
-              <li><a href="#">コインケース</a></li>
-              <li><a href="#">カードケース</a></li>
-              <li><a href="#">キーカバー</a></li>
-              <li><a href="#">ポケットティッシュケース</a></li>
-              <li><a href="#">フェアトレードボーイ</a></li>
-              <li><a href="#">SALE　-セール-</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <h4><a href="#">会員登録</a></h4>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <ul>
-              <li><a href="#">ご利用ガイド</a></li>
-              <li><a href="#">ご利用規約</a></li>
-              <li><a href="#">プライバシーポリシー</a></li>
-              <li><a href="#">特定商取引法に基づく表示</a></li>
-            </ul>
-          </div>
-        </div>
-        <p class="copyright"><small>Copyright 特定非営利活動法人ハロハロ. All Rights Reserved.</small></p>
-      </footer>
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-60010528-1', 'auto');
-        ga('send', 'pageview');
-        
-      </script>
-      <!-- build:js scripts/vendor.js-->
-      <!-- bower:js-->
-      <script src="bower_components/jquery/dist/jquery.js"></script>
-      <!-- endbower-->
-      <!-- endbuild-->
-      <!-- build:js scripts/plugins.js-->
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-      <!-- endbuild-->
-      <!-- build:js scripts/main.js-->
-      <script src="scripts/jquery.flatheights.js"></script>
-      <script src="scripts/main.js"></script>
-      <!-- endbuild-->
+        </footer>
+      </div>
     </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-60010528-1', 'auto');
+      ga('send', 'pageview');
+      
+    </script>
+    <!-- build:js scripts/vendor.js-->
+    <!-- bower:js-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/iscroll/build/iscroll.js"></script>
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:js scripts/plugins.js-->
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/main.js-->
+    <script src="bower_components/drawer/dist/js/jquery.drawer.js"></script>
+    <script src="scripts/jquery.flatheights.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild-->
   </body>
 </html>

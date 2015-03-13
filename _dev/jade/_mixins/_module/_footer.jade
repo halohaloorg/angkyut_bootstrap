@@ -1,70 +1,49 @@
 mixin footer()
   footer
-    .row
-      .col-lg-3.col-md-3.col-sm-6.col-xs-12
-        h4
-          a(href='#') AngKyutについて
-        ul
-          li
-            a(href='#') 作りたちの物語
-          li
-            a(href='#') 社会への貢献について
-          li
-            a(href='http://www.npohalohalo.org/', target='_blank') 特定非営利活動法人ハロハロ
-      .col-lg-3.col-md-3.col-sm-6.col-xs-12
-        h4
-          a(href='#') 製品ラインナップ
-        ul
-          li
-            a(href='#') Trashion by.FrancisSollano
-          li
-            a(href='#') クラッチ
-          li
-            a(href='#') オリガミ
-          li
-            a(href='#') サッキュート
-          li
-            a(href='#') ランチバッグ
-          li
-            a(href='#') クーラーバッグ(保冷温)
-          li
-            a(href='#') バッグインバッグ
-          li
-            a(href='#') ポーチ
-          li
-            a(href='#') ペンケース
-          li
-            a(href='#') PCケース(ノート)
-          li
-            a(href='#') PCバッグ
-          li
-            a(href='#') ブックカバー
-          li
-            a(href='#') パスポートケース
-          li
-            a(href='#') コインケース
-          li
-            a(href='#') カードケース
-          li
-            a(href='#') キーカバー
-          li
-            a(href='#') ポケットティッシュケース
-          li
-            a(href='#') フェアトレードボーイ
-          li
-            a(href='#') SALE　-セール-
-      .col-lg-3.col-md-3.col-sm-6.col-xs-12
-        h4
-          a(href='#') 会員登録
-      .col-lg-3.col-md-3.col-sm-6.col-xs-12
-        ul
-          li
-            a(href='#') ご利用ガイド
-          li
-            a(href='#') ご利用規約
-          li
-            a(href='#') プライバシーポリシー
-          li
-            a(href='#') 特定商取引法に基づく表示
+    .container
+      .row
+        .col-lg-3.col-md-3.col-sm-4.col-xs-12
+          ul
+            li
+              a(href='about.html') AngKyutについて
+            li
+              a(href='story.html') 作りたちの物語
+            li
+              a(href='http://www.npohalohalo.org/', target='_blank') 特定非営利活動法人ハロハロ
+        .col-lg-3.col-md-3.col-sm-4.col-xs-12
+          ul
+            li
+              a(href='guide.html') ご利用ガイド
+            li
+              a(href='agreement.html') ご利用規約
+            li
+              a(href='policy.html') プライバシーポリシー
+            li
+              a(href='commercial.html') 特定商取引法に基づく表示
+        .col-lg-6.col-md-6.col-sm-4.col-xs-12
+          h3
+            | お問い合わせ
+          form.form-horizontal(role='form')
+            .form-group
+              label.col-lg-3.control-label(for='inputName') 名前
+              .col-lg-9
+                input#inputName.form-control(type='name', placeholder='例）アロマ花子')
+            .form-group
+              label.col-lg-3.control-label(for='inputEmail') メール
+              .col-lg-9
+                input#inputEmail.form-control(type='email', placeholder='例）example@mail.com')
+            .form-group
+              label.col-lg-3.control-label(for='inputDetail') 問い合わせ
+              .col-lg-9
+                textarea#inputDetail.form-control(rows='3')
+            .form-group
+              .col-lg-offset-3.col-lg-9
+                button.btn.btn-default(type='submit') 送信
+
+      p.copyright
+        small Copyright 特定非営利活動法人ハロハロ. All Rights Reserved.
+
+mixin footer_ssl()
+  footer
     p.copyright
       small Copyright 特定非営利活動法人ハロハロ. All Rights Reserved.

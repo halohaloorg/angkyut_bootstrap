@@ -11,17 +11,24 @@ html(lang='ja')
       title AngKyut
   
   body
-    div.container
-      block header_block
-        +header
-        
-      block navigation_block
-        //-
-          +navbar
+    block header_block
+      +header
+    
+    .drawer.drawer-left.drawer-responsive
+      block drawer_block
+        +drawer
       
-      main#CONTENTS
-        block content_block
-      
-      block footer_block
-        +footer
-        include ../_include/_script
+      div.drawer-overlay
+        .container
+            
+          block navigation_block
+            //-
+              +navbar
+          
+          main#CONTENTS
+            block content_block
+          
+        block footer_block
+          +footer
+          
+    include ../_include/_script

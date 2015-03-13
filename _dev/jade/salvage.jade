@@ -1,16 +1,15 @@
-extend _template/_angkyut
+extend _template/_angkyut_ssl
 
 block content_block
-  p パスワードを忘れた方は、当ページより再度パスワードを設定いただけます。ご登録頂いている内容を入力して下さい。
-  form.form-horizontal
 
 
   form.form-horizontal
     fieldset
       // Form Name
       legend パスワードの再設定
+      p パスワードを忘れた方は、当ページより再度パスワードを設定いただけます。ご登録頂いている内容を入力して下さい。
       .form-group
-        label.col-md-4.control-label(for='mail') メールアドレス*
+        label.col-md-4.control-label(for='mail') メールアドレス
         .col-md-4
           input#mail.form-control.input-md(name='mail', type='text', placeholder='xxxx@example.com', required='')
       .form-group

@@ -1,13 +1,11 @@
 extend _template/_angkyut
 
-block content_block
-  +carousel
-  
+block content_block  
   section#PICKUP
-    h4 NEW ITEM
-      small&nbsp;新入荷商品
     #PICK_UP.row
-      for j in [1, 2, 3, 4]
+      h3 
+        | クーラーバッグ(保冷温)
+      for j in [1, 2]
         for goods, i in [{"image": "http://angkyut.com/image/ItemPicture/image/631/230x150.jpg?crop=1?1424754534","title": "ラップトップバッグ S","price":"5,000"},{"image": "http://angkyut.com/image/ItemPicture/image/752/230x150.jpg?crop=1?1424754534","title": "バッグインバッグ C","price":"5,000"},{"image": "http://angkyut.com/image/ItemPicture/image/524/230x150.jpg?crop=1?1422967578","title": "バッグインバッグ F","price":"5,000"},{"image": "http://angkyut.com/image/ItemPicture/image/1197/230x150.jpg?crop=1?1422967578","title": "Sackyutクラッチ(A4対応) G","price":"5,000"},{"image": "http://angkyut.com/image/ItemPicture/image/73/230x150.png?crop=1?1422967578","title": "オリガミポーチ M　シルバー系レッド","price":"5,000"},{"image": "http://angkyut.com/image/ItemPicture/image/1216/230x150.png?crop=1?1422967578","title": "ISABEL2 -SquareClutchBag-","price":"5,000"},{"image": "http://angkyut.com/image/ItemPicture/image/1156/230x150.jpg?crop=1?1422967578","title": "ラップトップバッグ S","price":"5,000"},{"image": "http://angkyut.com/image/ItemPicture/image/515/230x150.jpg?crop=1?1422967578","title": "バッグインバッグ C","price":"5,000"}]
           .col-lg-3.col-md-4.col-sm-6.col-xs-12
             a(href='article.html', title='#{goods.title}')

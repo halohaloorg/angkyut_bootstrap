@@ -1,2 +1,4 @@
 prepros.cfg
 pdf/*
+bower_components
+build
