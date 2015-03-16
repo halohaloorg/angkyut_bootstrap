@@ -20,6 +20,26 @@ mixin header()
     h3.text-muted
       a(href='top.html')
         img(src='images/logo_angkyut_white.svg', height='20')
+          
+mixin header_nologin()
+  header#HEADER
+    ul.nav.nav-pills.pull-right
+      li
+        form.form-inline
+          .form-group
+            label.sr-only(for='InputSearch') 検索
+            .input-group
+              input#InputSearch.form-control.input-sm(type='search', placeholder='検索')
+              .input-group-addon
+                span.glyphicon.glyphicon-search
+      li
+        a(href='#', data-toggle='modal', data-target='#MODAL_LOGIN_WINDOW')
+          span.glyphicon.glyphicon-user
+          ログイン
+    h3.text-muted
+      a(href='top.html')
+        img(src='images/logo_angkyut_white.svg', height='20')
+  +modal_login_window()
 
 mixin header_ssl()
   header#HEADER.ssl
@@ -35,3 +55,44 @@ mixin header_ssl()
     h3.text-muted
       a(href='top.html')
         img(src='images/logo_angkyut_white.svg', height='20')
+
+mixin header_nologin_ssl()
+  header#HEADER.ssl
+    ul.nav.nav-pills.pull-right
+      li
+        a(href='#', data-toggle='modal', data-target='#MODAL_LOGIN_WINDOW')
+          span.glyphicon.glyphicon-user
+          ログイン
+    h3.text-muted
+      a(href='top.html')
+        img(src='images/logo_angkyut_white.svg', height='20')
+  +modal_login_window()
+
+mixin modal_login_window()
+  #MODAL_LOGIN_WINDOW.modal.fade
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+          h4.modal-title AngKyutにログイン
+        .modal-body
+          form.form-horizontal(method='post', action='#', enctype='application/x-www-form-urlencoded')
+            .form-group
+              label.col-sm-3.control-label(for='InputEmail')
+                | メールアドレス
+              .col-sm-9
+                input.form-control.input-lg(id='InputEmail', type='text', name='InputEmail', placeholder='example@example.com')
+            .form-group
+              label.col-sm-3.control-label(for='InputPassword')
+                | パスワード
+              .col-sm-9
+                input.form-control.input-lg(id='InputPassword', type='password', name='InputPassword', value='', placeholder='')
+            .checkbox
+              input(id='checkbox1', type='checkbox', name='checkbox1')
+              label(for='checkbox1')
+                | 次回から自動的にログインする
+            p
+              input.btn.btn-primary.btn-lg.btn-block(type='submit', value='ログイン')
+            p
+              a.arrow_link(href='salvage.html') パスワードをお忘れの方

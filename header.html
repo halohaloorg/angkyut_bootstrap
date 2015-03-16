@@ -1,0 +1,191 @@
+
+<div id="CRUMBS">
+  <ul class="cf">
+    <li class="now"><span>1.必要な情報の入力</span></li>
+    <li class="yet"><span>2.入力情報の確認</span></li>
+    <li class="yet"><span>3.決済確定</span></li>
+  </ul>
+</div><!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+    <!-- build:css styles/vendor.css-->
+    <!-- bower:css-->
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:css({.tmp,app}) /css/main.css-->
+    <link rel="stylesheet" href="bower_components/drawer/dist/css/drawer.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- endbuild-->
+    <!-- build:js scripts/vendor/modernizr.js-->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild-->
+    <title>AngKyut</title>
+    <style>
+      #HEADER {
+      position: static;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ログイン後</h1>
+    <header id="HEADER">
+      <ul class="nav nav-pills pull-right">
+        <li>
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="InputSearch" class="sr-only">検索</label>
+              <div class="input-group">
+                <input id="InputSearch" type="search" placeholder="検索" class="form-control input-sm"/>
+                <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+              </div>
+            </div>
+          </form>
+        </li>
+        <li><a href="#"> <span class="glyphicon glyphicon-user"></span>&nbsp;苗字名前様 300P</a></li>
+        <li><a href="cart.html"> <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;3点 &yen;5,000</a></li>
+      </ul>
+      <h3 class="text-muted"><a href="top.html"><img src="images/logo_angkyut_white.svg" height="20"/></a></h3>
+    </header>
+    <h1>ログイン前</h1>
+    <header id="HEADER">
+      <ul class="nav nav-pills pull-right">
+        <li>
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="InputSearch" class="sr-only">検索</label>
+              <div class="input-group">
+                <input id="InputSearch" type="search" placeholder="検索" class="form-control input-sm"/>
+                <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+              </div>
+            </div>
+          </form>
+        </li>
+        <li><a href="#" data-toggle="modal" data-target="#MODAL_LOGIN_WINDOW"><span class="glyphicon glyphicon-user"></span>ログイン</a></li>
+      </ul>
+      <h3 class="text-muted"><a href="top.html"><img src="images/logo_angkyut_white.svg" height="20"/></a></h3>
+    </header>
+    <div id="MODAL_LOGIN_WINDOW" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">AngKyutにログイン</h4>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="#" enctype="application/x-www-form-urlencoded" class="form-horizontal">
+              <div class="form-group">
+                <label for="InputEmail" class="col-sm-3 control-label">メールアドレス</label>
+                <div class="col-sm-9">
+                  <input id="InputEmail" type="text" name="InputEmail" placeholder="example@example.com" class="form-control input-lg"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="InputPassword" class="col-sm-3 control-label">パスワード</label>
+                <div class="col-sm-9">
+                  <input id="InputPassword" type="password" name="InputPassword" value="" placeholder="" class="form-control input-lg"/>
+                </div>
+              </div>
+              <div class="checkbox">
+                <input id="checkbox1" type="checkbox" name="checkbox1"/>
+                <label for="checkbox1">次回から自動的にログインする</label>
+              </div>
+              <p>
+                <input type="submit" value="ログイン" class="btn btn-primary btn-lg btn-block"/>
+              </p>
+              <p><a href="salvage.html" class="arrow_link">パスワードをお忘れの方</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1>sslページログイン後</h1>
+    <header id="HEADER" class="ssl">
+      <ul class="nav nav-pills pull-right">
+        <li><a href="#"> <span class="glyphicon glyphicon-user"></span>&nbsp;苗字名前様 300P</a></li>
+        <li><a href="cart.html"> <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;3点 &yen;5,000</a></li>
+      </ul>
+      <h3 class="text-muted"><a href="top.html"><img src="images/logo_angkyut_white.svg" height="20"/></a></h3>
+    </header>
+    <h1>sslページログイン前</h1>
+    <header id="HEADER" class="ssl">
+      <ul class="nav nav-pills pull-right">
+        <li><a href="#" data-toggle="modal" data-target="#MODAL_LOGIN_WINDOW"><span class="glyphicon glyphicon-user"></span>ログイン</a></li>
+      </ul>
+      <h3 class="text-muted"><a href="top.html"><img src="images/logo_angkyut_white.svg" height="20"/></a></h3>
+    </header>
+    <div id="MODAL_LOGIN_WINDOW" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">AngKyutにログイン</h4>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="#" enctype="application/x-www-form-urlencoded" class="form-horizontal">
+              <div class="form-group">
+                <label for="InputEmail" class="col-sm-3 control-label">メールアドレス</label>
+                <div class="col-sm-9">
+                  <input id="InputEmail" type="text" name="InputEmail" placeholder="example@example.com" class="form-control input-lg"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="InputPassword" class="col-sm-3 control-label">パスワード</label>
+                <div class="col-sm-9">
+                  <input id="InputPassword" type="password" name="InputPassword" value="" placeholder="" class="form-control input-lg"/>
+                </div>
+              </div>
+              <div class="checkbox">
+                <input id="checkbox1" type="checkbox" name="checkbox1"/>
+                <label for="checkbox1">次回から自動的にログインする</label>
+              </div>
+              <p>
+                <input type="submit" value="ログイン" class="btn btn-primary btn-lg btn-block"/>
+              </p>
+              <p><a href="salvage.html" class="arrow_link">パスワードをお忘れの方</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-60010528-1', 'auto');
+      ga('send', 'pageview');
+      
+    </script>
+    <!-- build:js scripts/vendor.js-->
+    <!-- bower:js-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/iscroll/build/iscroll.js"></script>
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:js scripts/plugins.js-->
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/main.js-->
+    <script src="bower_components/drawer/dist/js/jquery.drawer.js"></script>
+    <script src="scripts/jquery.flatheights.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild-->
+  </body>
+</html>

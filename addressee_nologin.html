@@ -28,7 +28,14 @@
       <h3 class="text-muted"><a href="top.html"><img src="images/logo_angkyut_white.svg" height="20"/></a></h3>
     </header>
     <main id="CONTENTS" class="container">
-      <h3>配送する住所を入力する</h3>
+      <div id="CRUMBS">
+        <ul class="cf">
+          <li class="now"><span>1.必要な情報の入力</span></li>
+          <li class="yet"><span>2.入力情報の確認</span></li>
+          <li class="yet"><span>3.決済確定</span></li>
+        </ul>
+      </div>
+      <p>すでにAngKyut会員の方はこちらからログインしてください。</p><a href="addressee.html" class="btn btn-lg btn-primary">ログイン</a>
       <form class="form-horizontal">
         <fieldset>
           <!-- Form Name-->
@@ -140,25 +147,76 @@
               <input id="mail_conform" name="mail_conform" type="text" placeholder="xxxx@example.com" required="" class="form-control input-md">
             </div>
           </div>
+        </fieldset>
+      </form>
+      <form action="confirmation.html" class="form-horizontal">
+        <fieldset>
+          <!-- Form Name-->
           <div class="form-group">
-            <label for="password" class="col-md-4 control-label">希望のパスワード*</label>
-            <div class="col-md-4">
-              <input id="password" name="password" type="password" placeholder="" required="" class="form-control input-md">
+            <label class="col-sm-4 control-label">お届け希望日</label>
+            <div class="col-sm-4">
+              <select class="form-control">
+                <option value="指定なし" selected="selected">指定なし</option>
+                <option value="2015/03/19">3月19日（木）</option>
+                <option value="2015/03/20">3月20日（金）</option>
+                <option value="2015/03/21">3月21日（土）</option>
+                <option value="2015/03/22">3月22日（日）</option>
+                <option value="2015/03/23">3月23日（月）</option>
+                <option value="2015/03/24">3月24日（火）</option>
+                <option value="2015/03/25">3月25日（水）</option>
+                <option value="2015/03/26">3月26日（木）</option>
+              </select>
             </div>
           </div>
-          <!-- Password input-->
           <div class="form-group">
-            <label for="password_confirm" class="col-md-4 control-label">希望のパスワード（確認）</label>
-            <div class="col-md-4">
-              <input id="password_confirm" name="password_confirm" type="password" placeholder="" required="" class="form-control input-md">
+            <label class="col-sm-4 control-label">お届け希望時間帯</label>
+            <div class="col-sm-4">
+              <select class="form-control">
+                <option value="0">指定なし</option>
+                <option value="1">午前中</option>
+                <option value="2">12時-14時</option>
+                <option value="3">14時-16時</option>
+                <option value="4">16時-18時</option>
+                <option value="5">18時-21時</option>
+              </select>
             </div>
           </div>
           <div class="form-group">
-            <div class="col-md-4 col-md-offset-4">
-              <button class="btn btn-default btn-lg">この住所に郵送する</button>
+            <label class="col-sm-4 control-label">お支払い方法</label>
+            <div class="col-sm-4">
+              <label class="radio-inline">
+                <input type="radio" name="payment" value="option1" checked>代金引換（手数料315円）
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="payment" value="option2">銀行振込
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-4 control-label">領収書</label>
+            <div class="col-sm-4">
+              <label class="radio-inline">
+                <input type="radio" name="receipt" value="option1" checked>不要
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="receipt" value="option2">必要
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-4 control-label">備考欄</label>
+            <div class="col-sm-4">
+              <textarea rows="3" class="form-control"></textarea>
             </div>
           </div>
         </fieldset>
+        <p class="text-center"><a href="rule.html" target="_blank">ご利用規約および個人情報の取り扱いに関する同意書</a></p>
+        <ul class="pager">
+          <li>
+            <input value="同意書に同意して入力情報の確認" type="submit" class="btn btn-lg btn-primary">
+          </li>
+          <li class="previous"><a href="cart.html"><span aria-hidden="true">←</span>戻る</a></li>
+        </ul>
       </form>
     </main>
     <footer>

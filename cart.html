@@ -28,7 +28,7 @@
       <h3 class="text-muted"><a href="top.html"><img src="images/logo_angkyut_white.svg" height="20"/></a></h3>
     </header>
     <main id="CONTENTS" class="container">
-      <table class="table">
+      <table id="CART_TABLE" class="table">
         <thead>
           <tr>
             <th>商品画像</th>
@@ -44,7 +44,9 @@
             <th><img src="http://angkyut.com/sq_image/ItemPicture/image/2/120.png?1424695540" width="120" height="120" alt="【Fairtradeboy掲載品】ライスサッククラッチ　茶系"></th>
             <td>【Fairtradeboy掲載品】ライスサッククラッチ　茶系</td>
             <td>1,800円（税込）</td>
-            <td>1個</td>
+            <td>
+              <input type="number" value="1" class="form-control input-sm inline">&nbsp;個
+            </td>
             <td>1,800円</td>
             <td><a href="/cart/delete/kQhs5yRKV8bn" onclick="return confirm(&quot;カートから削除してよろしいですか？&quot;);">削除する</a></td>
           </tr>
@@ -52,20 +54,24 @@
             <th><img src="http://angkyut.com/sq_image/ItemPicture/image/488/120.jpg?1424754799" width="120" height="120" alt="ランチトート　H"></th>
             <td>ランチトート　H</td>
             <td>1,800円（税込）</td>
-            <td>1個</td>
+            <td>
+              <input type="number" value="1" class="form-control input-sm inline">&nbsp;個
+            </td>
             <td>1,800円</td>
             <td><a href="/cart/delete/kQhs5yRKV8bn" onclick="return confirm(&quot;カートから削除してよろしいですか？&quot;);">削除する</a></td>
           </tr>
           <tr>
             <td colspan="4">合計（送料は確認画面で反映されます）</td>
-            <td colspan="2">3,800円（税込）</td>
+            <td colspan="2">
+              <p class="lead">3,800円（税込）</p>
+            </td>
           </tr>
         </tbody>
       </table>
       <nav>
         <ul class="pager">
           <li class="previous"><a href="top.html"> <span aria-hidden="true">&larr;</span>ショッピングを続ける</a></li>
-          <li class="next"><a href="login.html">
+          <li class="next"><a href="addressee.html">
                
               ご購入手続きに進む<span aria-hidden="true">&rarr;</span></a></li>
         </ul>

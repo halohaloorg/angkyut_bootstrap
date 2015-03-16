@@ -1,0 +1,27 @@
+include _mixins/_mixins
+
+block var_block
+  
+doctype
+html(lang='ja')
+
+  head
+    include _include/_meta
+    block title_block
+      title AngKyut
+    style.
+      #HEADER {
+      position: static;
+      }
+  body
+    block header_block
+      h1 ログイン後
+      +header
+      h1 ログイン前
+      +header_nologin
+      h1 sslページログイン後
+      +header_ssl
+      h1 sslページログイン前
+      +header_nologin_ssl
+          
+    include _include/_script

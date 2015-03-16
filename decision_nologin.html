@@ -1,11 +1,4 @@
-
-<div id="CRUMBS">
-  <ul class="cf">
-    <li class="now"><span>1.必要な情報の入力</span></li>
-    <li class="yet"><span>2.入力情報の確認</span></li>
-    <li class="yet"><span>3.決済確定</span></li>
-  </ul>
-</div><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
@@ -35,6 +28,48 @@
       <h3 class="text-muted"><a href="top.html"><img src="images/logo_angkyut_white.svg" height="20"/></a></h3>
     </header>
     <main id="CONTENTS" class="container">
+      <p class="lead">ご購入ありがとうございました。</p>
+      <hr>
+      <h3>こちらから簡単に会員登録ができます。</h3>
+      <form class="form-horizontal">
+        <fieldset>
+          <div class="form-group">
+            <label class="col-sm-4 control-label">お名前</label>
+            <div class="col-sm-2">
+              <input type="text" placeholder="姓" value="菊地" class="form-control">
+            </div>
+            <div class="col-sm-2">
+              <input type="text" placeholder="名" value="武志" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label">メールアドレス</label>
+            <div class="col-md-4">
+              <input name="mail" type="text" placeholder="xxxx@example.com" value="mail@example.com" class="form-control input-md">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password" class="col-md-4 control-label">希望のパスワード*</label>
+            <div class="col-md-4">
+              <input id="password" name="password" type="password" placeholder="" required="" class="form-control input-md">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password_confirm" class="col-md-4 control-label">希望のパスワード（確認）</label>
+            <div class="col-md-4">
+              <input id="password_confirm" name="password_confirm" type="password" placeholder="" required="" class="form-control input-md">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-4 col-md-offset-4"><a href="signin.html" class="btn btn-lg btn-primary">会員登録する</a></div>
+          </div>
+        </fieldset>
+      </form>
+      <nav>
+        <ul class="pager">
+          <li class="previous"><a href="top.html"> <span aria-hidden="true">&larr;</span>ショッピングを続ける</a></li>
+        </ul>
+      </nav>
     </main>
     <footer>
       <p class="copyright"><small>Copyright 特定非営利活動法人ハロハロ. All Rights Reserved.</small></p>

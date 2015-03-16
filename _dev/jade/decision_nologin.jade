@@ -1,0 +1,39 @@
+extend _template/_angkyut_ssl
+
+block content_block
+  
+  p.lead
+    | ご購入ありがとうございました。
+  hr
+  h3 こちらから簡単に会員登録ができます。
+  form.form-horizontal
+    fieldset
+      .form-group
+        label.col-sm-4.control-label お名前
+        .col-sm-2
+          input.form-control(type="text", placeholder="姓", value='菊地')
+        .col-sm-2
+          input.form-control(type="text", placeholder="名", value='武志')
+      .form-group
+        label.col-md-4.control-label メールアドレス
+        .col-md-4
+          input.form-control.input-md(name='mail', type='text', placeholder='xxxx@example.com', value='mail@example.com')
+      .form-group
+        label.col-md-4.control-label(for='password') 希望のパスワード*
+        .col-md-4
+          input#password.form-control.input-md(name='password', type='password', placeholder='', required='')
+      .form-group
+        label.col-md-4.control-label(for='password_confirm') 希望のパスワード（確認）
+        .col-md-4
+          input#password_confirm.form-control.input-md(name='password_confirm', type='password', placeholder='', required='')
+      .form-group
+        .col-md-4.col-md-offset-4
+          a.btn.btn-lg.btn-primary(href='signin.html')
+            | 会員登録する
+  
+  nav
+    ul.pager
+      li.previous
+        a(href='top.html') 
+          span(aria-hidden='true') &larr;
+          ショッピングを続ける

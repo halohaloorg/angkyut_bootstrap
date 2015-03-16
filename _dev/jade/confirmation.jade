@@ -1,0 +1,100 @@
+extend _template/_angkyut_ssl
+
+block content_block
+  +arrow_navi(2)
+  
+  table#CART_TABLE.table
+    thead
+      tr
+        th 商品画像
+        th 商品名
+        th 単価(税込み)
+        th 個数
+        th 計
+    tbody
+      tr
+        th
+          img(src='http://angkyut.com/sq_image/ItemPicture/image/2/120.png?1424695540', width='120', height='120', alt='【Fairtradeboy掲載品】ライスサッククラッチ　茶系')
+        td
+          |【Fairtradeboy掲載品】ライスサッククラッチ　茶系
+        td
+          | 1,800円（税込）
+        td
+          | 1個
+        td
+          | 1,800円
+      tr
+        th
+          img(src='http://angkyut.com/sq_image/ItemPicture/image/488/120.jpg?1424754799', width='120', height='120', alt='ランチトート　H')
+        td
+          |ランチトート　H
+        td
+          | 1,800円（税込）
+        td
+          | 2個
+        td
+          | 3,600円
+      tr
+        td(colspan='4')
+          | 小計
+        td(colspan='1')
+          p
+            | 3,800円（税込）
+      tr
+        td(colspan='4')
+          | 送料 
+        td(colspan='1')
+          p
+            | 700円
+      tr
+        td(colspan='4')
+          | 代引き手数料 
+        td(colspan='1')
+          p
+            | 315円
+      tr
+        td(colspan='4')
+          strong
+            | 合計 
+        td(colspan='1')
+          p.lead
+            | 4,815円
+
+  dl.dl-horizontal
+    dt
+      配送先住所
+    dd
+      p 〒000-000
+      p 東京都世田谷区成城５丁目１６－２１
+      p 菊地武志
+      p 090-0000-0000
+    dt
+      お届け希望日
+    dd
+      p 3月19日（水）
+    dt
+      お届け希望時間帯
+    dd
+      p 午前中
+    dt
+      お支払い方法
+    dd
+      p 代金引換
+    dt
+      領収書
+    dd
+      p 宛名 halohalo様
+      p 但し品代として
+    dt
+      備考欄
+    dd
+      p 備考備考備考備考備考備考備考備考
+
+  ul.pager
+    li
+      a.btn.btn-lg(href='decision.html',role='button')
+        | ご注文を確定する
+    li.previous
+      a(href='addressee.html')
+        span(aria-hidden='true') ←
+        | 戻る

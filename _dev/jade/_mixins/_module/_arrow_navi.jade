@@ -1,0 +1,29 @@
+mixin arrow_navi(num)
+  case num
+    when 1
+      #CRUMBS
+        ul.cf
+          li.now
+            span 1.必要な情報の入力
+          li.yet
+            span 2.入力情報の確認
+          li.yet
+            span 3.決済確定
+    when 2
+      #CRUMBS
+        ul.cf
+          li
+            span 1.必要な情報の入力
+          li.now
+            span 2.入力情報の確認
+          li.yet
+            span 3.決済確定
+    when 3
+      #CRUMBS
+        ul.cf
+          li
+            span 1.必要な情報の入力
+          li
+            span 2.入力情報の確認
+          li.now
+            span 3.決済確定
