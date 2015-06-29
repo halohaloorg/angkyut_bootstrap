@@ -1,9 +1,8 @@
 # angkyut
 
-##build
-ビルドにはpreprosを使用しています。
+##build tool
 https://prepros.io/
 
-上記サイトからインストールして作業環境を指定してください。
-
-
+##bower
+npm install bower
+bower install
