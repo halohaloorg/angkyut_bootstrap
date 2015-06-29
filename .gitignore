@@ -1,5 +1,5 @@
 prepros.cfg
 pdf/*
-bower_components
+bower_components/
 build
 angkyut-test
